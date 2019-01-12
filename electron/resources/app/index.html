@@ -139,8 +139,6 @@ var img=new Image();
 
 img.onload=function()
 {
-
-  console.log(progress);
   cxt.clearRect(0,0,1920,1080);
   cxt.fillRect(0, 0, 1920, 1080);
   cxt.drawImage(img,0,0,1920,1080);
@@ -162,7 +160,7 @@ function step(timestamp) {
 	
 	requestAnimationFrame(step);
 }
-requestAnimationFrame(step);
+//requestAnimationFrame(step);
 
 console.log("#####");
 
